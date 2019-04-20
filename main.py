@@ -9,11 +9,15 @@ strСipher = 'А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф 
 s = 'зашифрованная строка: '
 for k in strForСipher:
 
+
+
+
+
     res = [y for y in Сipher if k.upper() in y]
  
     if len(res) != 0:
         m = Сipher[(Сipher.index(k.upper()) + shift)%33] 
-        
+
         if k.isupper(): 
             s = s + m 
         else:
